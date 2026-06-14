@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Label (optional)" android:textStyle="bold"/>
+        <EditText android:id="@+id/etLabel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Friendly name" android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Dispatch type" android:textStyle="bold"/>
+        <Spinner android:id="@+id/spinnerDispatch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Action" android:textStyle="bold"/>
+        <EditText android:id="@+id/etAction"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="android.intent.action.VIEW" android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Data URI" android:textStyle="bold"/>
+        <EditText android:id="@+id/etDataUri"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="https://example.com" android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="MIME type" android:textStyle="bold"/>
+        <EditText android:id="@+id/etMimeType"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="text/plain" android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Component" android:textStyle="bold"/>
+        <EditText android:id="@+id/etComponent"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="com.example.app/com.example.app.MainActivity"
+            android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Package" android:textStyle="bold"/>
+        <EditText android:id="@+id/etPackageName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="com.example.app" android:inputType="text"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Flags" android:textStyle="bold"/>
+        <Button android:id="@+id/btnChooseFlags"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Choose flags"/>
+        <TextView android:id="@+id/tvSelectedFlags"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="None selected" android:textSize="12sp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Categories" android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/llCategories"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <Button android:id="@+id/btnAddCategory"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="+ Add category"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Extras" android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/llExtras"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <Button android:id="@+id/btnAddExtra"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="+ Add extra"/>
+
+    </LinearLayout>
+</ScrollView>
