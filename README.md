@@ -24,17 +24,7 @@ A minimal Android developer tool for composing, firing, and managing Android Int
 ## Setup
 
 1. Clone the repository and open in Android Studio
-2. Ensure the following dependencies are present in your module-level `build.gradle`:
-
-```groovy
-implementation 'androidx.recyclerview:recyclerview:1.3.2'
-implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
-implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
-implementation 'androidx.activity:activity-ktx:1.9.0'
-implementation 'com.google.code.gson:gson:2.10.1'
-```
-
-3. Build and sideload the APK onto your device
+2. Build and sideload the APK onto your device
 
 ---
 
